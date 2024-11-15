@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="Nav.css" rel="stylesheet" type="text/css" />
+    <link href="Font.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Your Page Title</title>
+</head>
+<body>
+
+    <!-- Background audio element -->
+    <audio id="background-audio" loop>
+        <source src="#" type="audio/mpeg">
+    </audio>
+    
+    <!-- Navbar structure -->
+    <nav class="navigatie">
+        <div class="logo">InSpire Jazz Quintet</div>
+        <div class="navigatie-links">
+            <a href="index.html" class="home-active">Home</a>
+            <a href="Bezetting.html">Bezetting</a>
+            <div class="subnav">
+                <a class="subnavbtn">Repertoire <i class="fa fa-caret-down"></i></a>
+                <div class="subnav-content">
+                    <a href="Standaard.html">Standaard</a>
+                    <a href="Kerst.html">Kerst</a>
+                </div>
+            </div>
+            <a href="Contacten.html">Contacten</a>  
+        </div>
+        <!-- Settings icon for theme selection -->
+        <i class="fas fa-cog instellingen-icon" onclick="toggleThemePanel()"></i>
+    </nav>
+    
+    <!-- Theme Selection Panel -->
+    <div id="theme-panel" class="theme-panel">
+        <button onclick="setTheme('normaal')">Normaal</button>
+        <button onclick="setTheme('light')">Light</button>
+        <button onclick="setTheme('dark')">Dark</button>
+        <button onclick="setTheme('wood')">Wood</button>
+    </div>
+    
+    <!-- Main content section -->
+    <div class="main">
+        <div class="fotos">
+            <img src="img/IMG_0811.jpeg" alt="Jazz Quintet Image">
+        </div>
+        <div class="welkom">
+            <h1>WELKOM</h1>
+        </div>
+        <div class="tekst">
+            <p>Het InSpire Jazz Quintet bestaat uit vijf ervaren muzikanten uit de Betuwe. De passie voor jazz is voelbaar in onze warme samenklank, gevormd door zang, piano, bas, soft trompet en drums.</p>
+            <p>De sfeervolle feel-good-mix die we brengen is uitermate geschikt voor een klein podium en voor recepties, diners, bedrijfsmanifestaties.</p>
+            <p>U kunt genieten van inspirerende jazzy klanken en zelf verstaanbaar blijven.</p>
+            <p>Ons repertoire bestaat uit realbook standards, aangevuld met recentere nummers met een heerlijke jazzy touch.</p>
+            <p>Klik op een luisterlinkje om een idee te krijgen van de muziek die u van ons mag verwachten.</p>
+            <p>Wij brengen onze eigen geluidsinstallatie mee en als er geen akoestische piano aanwezig is, een digitale piano.</p>
+        </div>
+    </div>
+</body>
+</html>

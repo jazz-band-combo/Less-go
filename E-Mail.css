@@ -1,0 +1,83 @@
+/* Algemene styling voor de pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex; /* Flexbox voor centreren */
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    min-height: 100vh; /* Vult volledige hoogte van het scherm */
+    margin: 0; /* Geen marges */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+
+    background-color: var(--box-background-color); /* Gebruikt box achtergrondkleur variabelen */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--text-color); /* Tekstkleur variabelen */
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Tekstkleur variabelen */
+}
+
+/* Label Styling */
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-color); /* Tekstkleur variabelen */
+}
+
+/* Input, Select, en Textarea Styling */
+/* Ensure that only the text inside form elements is black */
+/* Input, Select, en Textarea Styling */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    color: black; /* Set text color to black */
+    background-color: var(--background-color); /* Background can still use theme color */
+    border: 1px solid var(--box-border-color); /* Border color from theme */
+    padding: 15px; /* Increase padding to make the boxes larger */
+    font-size: 16px; /* Increase font size for readability */
+    height: 50px; /* Set a larger height for input fields */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the box */
+}
+
+/* Textarea specifieke styling */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px; /* Increase minimum height for textarea */
+    padding: 15px; /* Ensure consistent padding with other fields */
+}
+
+/* Button Styling */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--navbar-color); /* Knop achtergrondkleur gebaseerd op navbar kleur */
+    border: none;
+    border-radius: 4px;
+    color: var(--link-color); /* Tekstkleur voor knoppen */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--navbar-hover-color); /* Knop hover kleur */
+    color: var(--link-hover-color); /* Hover kleur voor knoptekst */
+}
+
+/* Verplichte veld styling */
+.contact-form label span {
+    color: var(--home-active-color); /* Kleur voor verplichte veld aanduiding */
+}

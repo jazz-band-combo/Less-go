@@ -1,0 +1,8 @@
+
+.welkom {
+    width: 100vw; /* Ensure the section also spans the full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
